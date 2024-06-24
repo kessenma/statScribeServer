@@ -1,0 +1,42 @@
+- Source citation:
+- Publication name: 
+- Publication year: 
+- Publication type (journal, conference, book, other):
+- Article abstract:
+- Hypotheses if they are explicitly stated.
+- sample size
+- Participant mean age
+- Participants' age Standard Deviation: 
+- Number of Females
+- Participants' Country of Origin:
+- Sample Type (students, general population, industry professionals, other): 
+- Participant education Level: 
+- Participant Race or Ethnicity
+- Research Method: 
+- Study Setting:
+- Research task description for participants: 
+- Task Duration: 
+- other statistics: 
+
+
+- Source citation: Hwang, J., Park, T., & Hwang, W. (2013). The effects of overall robot shape on the emotions invoked in users and the perceived personalities of robot. Applied ergonomics, 44(3), 459-471.
+- Publication name: Applied Ergonomics
+- Publication year: 2013
+- Publication type (journal, conference, book chapter, other): Book Chapter
+- Article abstract: The affective interaction between human and robots could be influenced by various aspects of robots, which are appearance, countenance, gesture, voice, etc. Among these, the overall shape of robot could play a key role in invoking desired emotions to the users and bestowing preferred personalities to robots. In this regard, the present study experimentally investigates the effects of overall robot shape on the emotions invoked in users and the perceived personalities of robot with an objective of deriving guidelines for the affective design of service robots.
+ In so doing, 27 different shapes of robot were selected, modeled and fabricated, which were combi- nations of three different shapes of head, trunk and limb (legs and arms) e rectangular-parallelepiped, cylindrical and human-like shapes. For the experiment, visual images and real prototypes of these robot shapes were presented to participants, and emotions invoked and personalities perceived from the presented robots were measured.
+ The results showed that the overall shape of robot arouses any of three emotions named ‚concerned‚, ‚enjoyable‚ and ‚favorable‚, among which ‚concerned‚ emotion is negatively correlated with the ‚big five personality factors‚ while ‚enjoyable‚ and ‚favorable‚ emotions are positively correlated. It was found that the ‚big five personality factors‚, and ‚enjoyable‚ and ‚favorable‚ emotions are more strongly perceived through the real prototypes than through the visual images. It was also found that the robot shape consisting of cylindrical head, human-like trunk and cylindrical head is the best for ‚conscientious‚ personality and ‚favorable‚ emotion, the robot shape consisting of cylindrical head, human-like trunk and human-like limb for ‚extroverted‚ personality, the robot shape consisting of cylindrical head, cylindrical trunk and cylindrical limb for ‚anti-neurotic‚ personality, and the robot shape consisting of rectangular- parallelepiped head, human-like trunk and human-like limb for ‚enjoyable‚ emotion.
+- Hypotheses if they are explicitly stated.
+- sample size: 20
+- Participant mean age: 23.5
+- Participants' age Standard Deviation: 1.61
+- Number of Females: 10
+- Participants' Country of Origin:
+- Sample Type (students, general population, industry professionals, other): 
+- Participant education Level: 
+- Participant Race or Ethnicity
+- Research Method: 
+- Study Setting:
+- Research task description for participants: 
+- Task Duration: 
+- other statistics: 
