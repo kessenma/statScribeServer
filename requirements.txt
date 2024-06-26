@@ -1,0 +1,7 @@
+torch
+transformers
+pymupdf
+pandas
+pdfminer.six
+Pillow
+torchvision

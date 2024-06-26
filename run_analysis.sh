@@ -3,7 +3,7 @@
 # Navigate to the directory containing your Dockerfile and Python script
 cd /home/gpt15/Desktop/statScribeServer
 
-# Build the Docker image
+# Build the Docker image if necessary
 docker build -t scibert-extractor .
 
 # Run the Docker container with the mounted volumes
