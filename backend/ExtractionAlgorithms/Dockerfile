@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     python3-dev \
     build-essential \
-    libpoppler-cpp-dev \
+    libpoppler-cpp-dev
     pkg-config \
     poppler-utils \
     tesseract-ocr \
@@ -35,8 +35,17 @@ RUN pip3 install 'git+https://github.com/facebookresearch/fvcore'
 RUN pip3 install 'git+https://github.com/facebookresearch/detectron2.git'
 RUN pip3 install torchvision
 
+# Add a new user "appuser" with the same user ID as the host user
+ARG UID=1000
+ARG GID=1000
+RUN groupadd -g ${GID} appgroup && \
+    useradd -m -u ${UID} -g appgroup -s /bin/bash appuser
+
+# Switch to new user
+USER appuser
+
 # Copy the rest of the application code
-COPY . .
+COPY .. .
 
 # Command to run your script
 CMD ["python3", "extract_statistics.py"]

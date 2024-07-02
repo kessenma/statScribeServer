@@ -120,5 +120,5 @@ def main(pdf_path):
         print("No text extracted from PDF.")
 
 if __name__ == "__main__":
-    pdf_path = "/app/test3.pdf"
+    pdf_path = "/app/inputs/test3.pdf"
     main(pdf_path)
