@@ -19,3 +19,19 @@ Thumbs.db
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Database data directory
+backend/docker/db/data/
+
+# Python cache files
+backend/db/__pycache__/
+backend/db/alembic/__pycache__/
+backend/db/models/__pycache__/
+backend/db/alembic/versions/
+
+# Temporary or generated files
+*.pid
+*.opts
+
+# Outputs
+backend/outputs/*.json
