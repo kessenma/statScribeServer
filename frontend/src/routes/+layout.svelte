@@ -39,29 +39,17 @@
 				<strong class="text-xl">StatScribe</strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<a
-						class="btn btn-sm variant-ghost-surface"
-						href="https://discord.gg/EXqV7W8MtY"
-						target="_blank"
-						rel="noreferrer"
-				>
-					Discord
+				<a class="btn btn-sm variant-ghost-surface" href="/">
+					Home
 				</a>
-				<a
-						class="btn btn-sm variant-ghost-surface"
-						href="https://twitter.com/SkeletonUI"
-						target="_blank"
-						rel="noreferrer"
-				>
-					Twitter
+				<a class="btn btn-sm variant-ghost-surface" href="/analysis">
+					Analysis
 				</a>
-				<a
-						class="btn btn-sm variant-ghost-surface"
-						href="https://github.com/skeletonlabs/skeleton"
-						target="_blank"
-						rel="noreferrer"
-				>
-					GitHub
+				<a class="btn btn-sm variant-ghost-surface" href="/history">
+					History
+				</a>
+				<a class="btn btn-sm variant-ghost-surface" href="/signout">
+					Sign out
 				</a>
 				<!-- Profile Icon -->
 				<button class="profile-icon" on:click="{() => toggleModal(true)}">

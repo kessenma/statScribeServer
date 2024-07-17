@@ -17,7 +17,7 @@ export default {
 			themes: {
 				preset: [
 					{
-						name: 'gold-nouveau',
+						name: 'seafoam',
 						enhancements: true,
 					},
 				],
