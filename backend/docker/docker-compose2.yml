@@ -1,0 +1,14 @@
+#  backend/docker/docker-compose.yml
+version: '3.8'
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: stat_scribe
+      POSTGRES_USER: statscribe
+      POSTGRES_PASSWORD: ss123
+    volumes:
+      - ./db/data:/var/lib/postgresql/data
+      - ./init-user-db.sh:/docker-entrypoint-initdb.d/init-user-db.sh
+    ports:
+      - "5434:5432"
