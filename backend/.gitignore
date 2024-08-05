@@ -1,3 +1,5 @@
+#backend/.gitignore
+
 node_modules
 
 # Output
@@ -23,8 +25,14 @@ vite.config.ts.timestamp-*
 # Database data directory
 backend/docker/db/data/
 
+# Docker volumes or data directories
+backend/docker/data/
+backend/docker/db/
+backend/docker/log/
+
 # Python cache files
 backend/db/__pycache__/
+*.pyc
 backend/db/alembic/__pycache__/
 backend/db/models/__pycache__/
 backend/db/alembic/versions/

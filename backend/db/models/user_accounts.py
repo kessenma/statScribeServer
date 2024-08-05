@@ -1,18 +1,13 @@
 # backend/db/models/user_accounts.py
-from sqlalchemy import Column, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import relationship
+from mongoengine import Document, StringField, IntField, ListField, ReferenceField
 
-Base = declarative_base()
-
-class User(Base):
-    __tablename__ = 'user_accounts'
-    user_id = Column(Integer, primary_key=True, autoincrement=True)
-    username = Column(String(50), unique=True, nullable=False)
-    email = Column(String(100), unique=True, nullable=False)
-    auth_method = Column(String(50), nullable=False)
-    password_hash = Column(String(128), nullable=False)
-    statistics = relationship("Statistics", back_populates="user")
+class User(Document):
+    user_id = IntField(primary_key=True)
+    username = StringField(max_length=50, unique=True, required=True)
+    email = StringField(max_length=100, unique=True, required=True)
+    auth_method = StringField(max_length=50, required=True)
+    password_hash = StringField(max_length=128, required=True)
+    statistics = ListField(ReferenceField('Statistics'))
 
     def __repr__(self):
         return f"<User(username='{self.username}', email='{self.email}')>"

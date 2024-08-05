@@ -1,14 +1,31 @@
-#  backend/docker/docker-compose.yml
 version: '3.8'
+
 services:
-  postgres:
-    image: postgres:latest
+  mongodb:
+    container_name: docker-stat-scribe
+    image: mongo:latest
     environment:
-      POSTGRES_DB: stat_scribe
-      POSTGRES_USER: statscribe
-      POSTGRES_PASSWORD: ss123
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: rootpassword
     volumes:
-      - ./db/data:/var/lib/postgresql/data
-      - ./init-user-db.sh:/docker-entrypoint-initdb.d/init-user-db.sh
+      - ./data:/data/db
+      - ./mongo-init/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+      - ./log:/var/log/mongodb
     ports:
-      - "5434:5432"
+      - "27017:27017"
+    command: mongod --bind_ip_all --logpath=/var/log/mongodb/mongod.log
+
+  web:
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ../:/app
+    ports:
+      - "5001:5000"
+    environment:
+      FLASK_SECRET_KEY: "your_secret_key"
+      GOOGLE_CLIENT_ID: "your_google_client_id"
+      GOOGLE_CLIENT_SECRET: "your_google_client_secret"
+    depends_on:
+      - mongodb
